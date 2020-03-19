@@ -1,0 +1,21 @@
+<div class="container"><br>
+    <h2>Random Data</h2><br>            
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>UserId</th>
+          <th>ContentId</th>
+          <th>Title</th>
+          <th>Content</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let row of data | async">
+          <td>{{ row.userId }}</td>
+          <td>{{ row.id }}</td>
+          <td>{{ row.title }}</td>
+          <td>{{ row.body }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
