@@ -1,0 +1,25 @@
+
+.btn-primary {
+    border: 1px solid white;
+    background-color: #1D4E89;
+    font-size: medium;
+    height: 200px;
+    width: 250px;
+}
+
+.btn-primary:hover {
+    border: 1px solid #1D4E89;
+    background-color: white;
+    color: #1D4E89;
+}
+
+.btn-default {
+    border: 1px solid #4EA5D9;
+    background-color: #7EC4CF;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .modal-dialog {
+    width: 900px;
+  }
