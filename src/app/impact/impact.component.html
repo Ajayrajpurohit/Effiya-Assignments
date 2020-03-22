@@ -1,3 +1,4 @@
+
 <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-7">
@@ -19,52 +20,52 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-            <form class="form-horizontal" action="/action_page.php">
+            <form class="form-horizontal" action="#">
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="DSName">Data Source Name:</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="DSName" placeholder="Enter Data Source Name" name="DSName">
+                      <input type="text" class="form-control" id="DSName" placeholder="Enter Data Source Name" name="DSName" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="DBType">Database Type:</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="DBType" placeholder="Enter Database Type" name="DBType">
+                      <input type="text" class="form-control" id="DBType" placeholder="Enter Database Type" name="DBType" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="IP">IP:</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="IP" placeholder="Enter IP" name="IP">
+                      <input type="text" class="form-control" id="IP" placeholder="Enter IP" name="IP" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="Port">Port:</label>
                     <div class="col-sm-8">
-                      <input type="number" class="form-control" id="Port" placeholder="Enter Port" name="Port">
+                      <input type="number" class="form-control" id="Port" placeholder="Enter Port" name="Port" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="UName">Username:</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="UName" placeholder="Enter Username" name="UName">
+                      <input type="text" class="form-control" id="UName" placeholder="Enter Username" name="UName" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="Pass">Password:</label>
                     <div class="col-sm-8">
-                      <input type="password" class="form-control" id="Pass" placeholder="Enter Password" name="Pass">
+                      <input type="password" class="form-control" id="Pass" placeholder="Enter Password" name="Pass" required minlength="8">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="control-label col-sm-4" for="DBName">Database Name:</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="DBName" placeholder="Enter Database Name" name="DBName">
+                      <input type="text" class="form-control" id="DBName" placeholder="Enter Database Name" name="DBName" required>
                     </div>
                   </div>
                 <div class="form-group row">        
                   <div class="col-sm-offset-2 col-sm-8">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default" onclick="submitForm()">Submit</button>
                   </div>
                 </div>
               </form>

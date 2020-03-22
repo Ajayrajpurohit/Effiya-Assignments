@@ -6,6 +6,24 @@
   <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+<script>
+  function submitForm() {
+    var data = new FormData();
+    data.append('','Data Source Name: '+ document.getElementById('DSName').value);
+    data.append('','Database Type: ' + document.getElementById('DBType').value);
+    data.append('','IP: ' + document.getElementById('IP').value);
+    data.append('','Port: ' + document.getElementById('Port').value);
+    data.append('','Username: ' + document.getElementById('UName').value);
+    data.append('','Password: ' + document.getElementById('Pass').value);
+    data.append('','Database name: ' + document.getElementById('DBName').value);
+
+    for(var value of data.values()){
+      console.log(value);
+    }
+  }
+
+</script>
 </head>
 <body>
   <app-root></app-root>
